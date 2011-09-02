@@ -27,11 +27,11 @@ public class LibSholatTime {
     public LibSholatTime() {
         this.nowTime = Calendar.getInstance();
         nowTime.setTime(new Date());
-        this.latitude = -7.967029;
-        this.langitude = 110.32173;
+        this.latitude = new Double(0);
+        this.langitude = new Double(0);
         this.subuhDegree = 20;
-        this.isyaDegree = 20;
-        this.timeZone = 7;
+        this.isyaDegree = 18;
+        this.timeZone = 1;
         this.altitude = 50;
         this.ashrShadow = 1;
     }

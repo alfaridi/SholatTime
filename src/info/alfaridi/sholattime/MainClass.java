@@ -1,7 +1,6 @@
 package info.alfaridi.sholattime;
 
 import java.util.Calendar;
-import java.util.Date;
 
 
 public class MainClass {
@@ -11,11 +10,13 @@ public class MainClass {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-            Calendar now = Calendar.getInstance();
-            now.setTime(new Date());
+            Calendar time = Calendar.getInstance();
+            time.set(Calendar.YEAR, 2011);
+            time.set(Calendar.MONTH, 10);
+            time.set(Calendar.DATE, 3);
             
             LibSholatTime libSholatTime = new LibSholatTime();
-            libSholatTime.setNowTime(now);
+            libSholatTime.setNowTime(time);
             libSholatTime.setSubuhDegree(20);
             libSholatTime.setIsyaDegree(18);
             libSholatTime.setCalculation(CalculationMethod.SHAFII);
